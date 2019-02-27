@@ -10,15 +10,16 @@
             <auth-field id="authPass" model="auth.user.password" type="password" 
                 placeholder="Informe a Senha"></auth-field>
             <auth-field id="authConfirmPass" model="auth.user.confirm_password" type="password" 
-                placeholder="Confirme a Senha" hide="auth.loginMode"></authfield>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <button class="btn btn-primary btn-block btn-flat" 
-                            ng-click="auth.login()" ng-show="auth.loginMode">Entrar</button>
-                        <button class="btn btn-primary btn-block btn-flat"
-                            ng-click="auth.signup()" ng-hide="auth.loginMode">Registrar</button>
-                    </div>
+                placeholder="Confirme a Senha" hide="auth.loginMode"></auth-field>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <button class="btn btn-primary btn-block btn-flat" 
+                        ng-click="auth.login()" ng-show="auth.loginMode">Entrar</button>
+                    <button class="btn btn-primary btn-block btn-flat"
+                        ng-click="auth.signup()" ng-hide="auth.loginMode">Registrar</button>
                 </div>
+            </div>
         </form>
         <br />
         <a href="javascript:;" ng-click="auth.changeMode()">
